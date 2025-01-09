@@ -13,7 +13,7 @@ var testData = []string{`
       "symbol": "GRMW",
       "name": "GremWorld",
       "decimals": 9,
-      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/8tGqYibsn9ZYv7513DLyNHUn5pBGKektsg4gKrMPfQrF/logo.jpg",
+      "logoURI": "https://raw.githubusercontent.com/vietlai/token-list/main/assets/mainnet/8tGqYibsn9ZYv7513DLyNHUn5pBGKektsg4gKrMPfQrF/logo.jpg",
       "tags": [
         "Metaverse"
       ]
@@ -22,7 +22,7 @@ var testData = []string{`
    {
      "symbol": "USDT-USDC",
      "name": "Saber USDT-USDC LP",
-     "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/2poo1w1DL6yd2WNTCnNTzDqkC6MBXq7axo77P16yrBuf/icon.png",
+     "logoURI": "https://raw.githubusercontent.com/vietlai/token-list/main/assets/mainnet/2poo1w1DL6yd2WNTCnNTzDqkC6MBXq7axo77P16yrBuf/icon.png",
      "decimals": 6,
      "address": "2poo1w1DL6yd2WNTCnNTzDqkC6MBXq7axo77P16yrBuf",
      "chainId": 101,
@@ -36,7 +36,7 @@ var testData = []string{`
    {
      "symbol": "PAI-USDC",
      "name": "Saber PAI-USDC LP",
-     "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/PaiYwHYxr4SsEWox9YmyBNJmxVG7GdauirbBcYGB7cJ/icon.png",
+     "logoURI": "https://raw.githubusercontent.com/vietlai/token-list/main/assets/mainnet/PaiYwHYxr4SsEWox9YmyBNJmxVG7GdauirbBcYGB7cJ/icon.png",
      "decimals": 6,
      "address": "PaiYwHYxr4SsEWox9YmyBNJmxVG7GdauirbBcYGB7cJ",
      "chainId": 101,
@@ -50,7 +50,7 @@ var testData = []string{`
    {
      "symbol": "BTC-renBTC",
      "name": "Saber BTC-renBTC LP",
-     "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/SLPbsNrLHv8xG4cTc4R5Ci8kB9wUPs6yn6f7cKosoxs/icon.png",
+     "logoURI": "https://raw.githubusercontent.com/vietlai/token-list/main/assets/mainnet/SLPbsNrLHv8xG4cTc4R5Ci8kB9wUPs6yn6f7cKosoxs/icon.png",
      "decimals": 8,
      "address": "SLPbsNrLHv8xG4cTc4R5Ci8kB9wUPs6yn6f7cKosoxs",
      "chainId": 101,
@@ -64,7 +64,7 @@ var testData = []string{`
    {
      "symbol": "pBTC-renBTC",
      "name": "Saber pBTC-renBTC LP",
-     "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/pBTCmyG7FaZx4uk3Q2pT5jHKWmWDn84npdc7gZXpQ1x/icon.png",
+     "logoURI": "https://raw.githubusercontent.com/vietlai/token-list/main/assets/mainnet/pBTCmyG7FaZx4uk3Q2pT5jHKWmWDn84npdc7gZXpQ1x/icon.png",
      "decimals": 8,
      "address": "pBTCmyG7FaZx4uk3Q2pT5jHKWmWDn84npdc7gZXpQ1x",
      "chainId": 101,
@@ -78,7 +78,7 @@ var testData = []string{`
    {
      "symbol": "CASH-USDC",
      "name": "Saber CASH-USDC LP",
-     "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/CLPKiHjoU5HwpPK5L6MBXHKqFsuzPr47dM1w4An3Lnvv/icon.png",
+     "logoURI": "https://raw.githubusercontent.com/vietlai/token-list/main/assets/mainnet/CLPKiHjoU5HwpPK5L6MBXHKqFsuzPr47dM1w4An3Lnvv/icon.png",
      "decimals": 6,
      "address": "CLPKiHjoU5HwpPK5L6MBXHKqFsuzPr47dM1w4An3Lnvv",
      "chainId": 101,
@@ -114,7 +114,7 @@ var testData = []string{`
       "symbol": "TOF",
       "name": "Toffee Token",
       "decimals": 0,
-      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/476ZdKh1xue32zNzFWvnyaDEncrBEdq99sDiZXSGyyJu/logo.png",
+      "logoURI": "https://raw.githubusercontent.com/vietlai/token-list/main/assets/mainnet/476ZdKh1xue32zNzFWvnyaDEncrBEdq99sDiZXSGyyJu/logo.png",
       "tags": [
         "utility-token"
       ],
@@ -140,7 +140,7 @@ var testData = []string{`
 	"symbol": "HTK",
 	"name": "HotoketCoin",
 	"decimals": 8,
-	"logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/9qXxEVGagc9ccd6b135Z8ZLr4VAWUd7T5KcmMyjYKBdB/logo.png",
+	"logoURI": "https://raw.githubusercontent.com/vietlai/token-list/main/assets/mainnet/9qXxEVGagc9ccd6b135Z8ZLr4VAWUd7T5KcmMyjYKBdB/logo.png",
 	"tags":[],
 	"extensions":{}
 }`,

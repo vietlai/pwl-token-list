@@ -75,7 +75,7 @@ A tutorial for adding/updating metadata can be found at the [Token-Creator demo]
 
 `@solana/spl-token-registry`
 
-[![npm](https://img.shields.io/npm/v/@solana/spl-token-registry)](https://unpkg.com/@solana/spl-token-registry@latest/) [![GitHub license](https://img.shields.io/badge/license-APACHE-blue.svg)](https://github.com/solana-labs/token-list/blob/b3fa86b3fdd9c817139e38641d46c5a892542a52/LICENSE)
+[![npm](https://img.shields.io/npm/v/@solana/spl-token-registry)](https://unpkg.com/@solana/spl-token-registry@latest/) [![GitHub license](https://img.shields.io/badge/license-APACHE-blue.svg)](https://github.com/vietlai/token-list/blob/b3fa86b3fdd9c817139e38641d46c5a892542a52/LICENSE)
 
 Solana Token Registry is a package that allows application to query for list of tokens.
 The JSON schema for the tokens includes: chainId, address, name, decimals, symbol, logoURI (optional), tags (optional), and custom extensions metadata.

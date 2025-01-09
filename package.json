@@ -5,7 +5,7 @@
   "main": "dist/main/index.js",
   "typings": "dist/main/index.d.ts",
   "module": "dist/module/index.js",
-  "repository": "https://github.com/solana-labs/token-list",
+  "repository": "https://github.com/vietlai/token-list",
   "license": "Apache",
   "keywords": [],
   "scripts": {
@@ -37,8 +37,7 @@
     "version": "standard-version",
     "reset-hard": "git clean -dfx && git reset --hard && npm i",
     "prepare-release": "run-s reset-hard test cov:check doc:html version doc:publish",
-    "purge:cdn": "run-s purge:cdn:*",
-    "purge:cdn:solana": "npx req https://purge.jsdelivr.net/gh/solana-labs/token-list@main/src/tokens/solana.tokenlist.json"
+    "purge:cdn": "run-s purge:cdn:*"
   },
   "engines": {
     "node": ">=10"
