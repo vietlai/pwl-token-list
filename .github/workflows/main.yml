@@ -26,13 +26,38 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-          registry-url: 'https://registry.npmjs.org'
-          scope: '@solana'
       - run: yarn
       - run: git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com" && git config --global user.name "$GITHUB_ACTOR"
-      - run: yarn run version --patch
-      - run: git push --follow-tags origin main
-      - run: yarn run purge:cdn
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+
+      - name: Detect changes in pulsewallet.tokenlist.json
+        run: |
+          git fetch origin main
+          CHANGED_FILES=$(git diff --name-only origin/main...HEAD)
+          if echo "$CHANGED_FILES" | grep -q "src/tokens/pulsewallet.tokenlist.json"; then
+            echo "Tokenlist changed."
+            git diff origin/main...HEAD -- src/tokens/pulsewallet.tokenlist.json > tokenlist.added
+          else
+            echo "No changes in pulsewallet.tokenlist.json."
+          fi
+        id: detect_changes
+
+      - name: Extract new tokens
+        if: steps.detect_changes.outputs.changed == 'true'
+        run: |
+          node scripts/extract-token-added.js > new_tokens.json
+        id: extract_tokens
+
+      - name: Send new tokens to API
+        if: steps.detect_changes.outputs.changed == 'true'
+        run: |
+          for token in $(cat new_tokens.json | jq -c '.[]'); do
+            echo "Sending token: $token"
+            RESPONSE=$(curl -w "%{http_code}" -o /tmp/response.log -s -X POST https://apis.dev.thepulsewallet.org/integration/tokens/storage \
+              -H "x-api-key: p8bU6zb3MPviiU9odLRe024X3wjk4Bv6" \
+              -H "Content-Type: application/json" \
+              -d "$token")
+            echo "Response HTTP code: $RESPONSE"
+            echo "Response body:"
+            cat /tmp/response.log
+            echo "-----------------------------------"
+          done
