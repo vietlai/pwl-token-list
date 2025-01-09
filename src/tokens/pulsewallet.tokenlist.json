@@ -1,0 +1,70 @@
+{
+  "name": "PulseWallet Token List",
+  "logoURI": "https://thepulsewallet.org/images/logo.svg",
+  "keywords": [
+    "pulsewallet",
+    "pulsechain"
+  ],
+  "tags": {
+    "stablecoin": {
+      "name": "stablecoin",
+      "description": "Tokens that are fixed to an external asset, e.g. the US dollar"
+    },
+    "ethereum": {
+      "name": "ethereum",
+      "description": "Asset bridged from Ethereum"
+    },
+    "lp-token": {
+      "name": "lp-token",
+      "description": "Asset representing liquidity provider token"
+    },
+    "wrapped": {
+      "name": "wrapped",
+      "description": "Asset wrapped using blockchain bridges"
+    },
+    "nft": {
+      "name": "nft",
+      "description": "Non-fungible token"
+    },
+    "security-token": {
+      "name": "security-token",
+      "description": "Tokens that are used to gain access to an electronically restricted resource"
+    },
+    "utility-token": {
+      "name": "utility-token",
+      "description": "Tokens that are designed to be spent within a certain blockchain ecosystem"
+    },
+    "tokenized-stock": {
+      "name": "tokenized-stock",
+      "description": "Tokenized stocks are tokenized derivatives that represent traditional securities, particularly shares in publicly traded firms"
+    },
+    "bridge-token": {
+      "name": "bridge-token",
+      "description": "Assets bridged from other blockchains"
+    },
+  },
+  "timestamp": "2021-03-03T19:57:21+0000",
+  "tokens": [
+    {
+      "chainId": 101,
+      "address": "3SghkPdBSrpF9bzdAy5LwR4nGgFbqNcC6ZSq8vtZdj91",
+      "symbol": "EV1",
+      "name": "EveryOne Coin",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/3SghkPdBSrpF9bzdAy5LwR4nGgFbqNcC6ZSq8vtZdj91/logo.png",
+      "tags": [
+        "currency"
+      ],
+      "extensions": {
+        "facebook": "https://facebook.com/everyonecoin",
+        "twitter": "https://twitter.com/everyonecoin",
+        "website": "https://everyonecoin.com/"
+      }
+    },
+  ],
+  "version": {
+    "major": 0,
+    "minor": 3,
+    "patch": 3
+  }
+}

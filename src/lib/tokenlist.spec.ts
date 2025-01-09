@@ -11,8 +11,8 @@ import {
 } from './tokenlist';
 
 test('Token list is filterable by a tag', async (t) => {
-  const list = (await new TokenListProvider().resolve(Strategy.Static))
-    .filterByChainId(ENV.MainnetBeta)
+  const list = (await new TokenListProvider().resolve(Strategy.GitHub))
+    .filterByChainId(ENV.PulseChain)
     .filterByTag('nft')
     .getList();
 
@@ -20,8 +20,8 @@ test('Token list is filterable by a tag', async (t) => {
 });
 
 test('Token list can exclude by a tag', async (t) => {
-  const list = (await new TokenListProvider().resolve(Strategy.Static))
-    .filterByChainId(ENV.MainnetBeta)
+  const list = (await new TokenListProvider().resolve(Strategy.GitHub))
+    .filterByChainId(ENV.PulseChain)
     .excludeByTag('nft')
     .getList();
 
@@ -29,22 +29,22 @@ test('Token list can exclude by a tag', async (t) => {
 });
 
 test('Token list can exclude by a chain', async (t) => {
-  const list = (await new TokenListProvider().resolve(Strategy.Static))
-    .excludeByChainId(ENV.MainnetBeta)
+  const list = (await new TokenListProvider().resolve(Strategy.GitHub))
+    .excludeByChainId(ENV.PulseChain)
     .getList();
 
-  t.false(list.some((item) => item.chainId === ENV.MainnetBeta));
+  t.false(list.some((item) => item.chainId === ENV.PulseChain));
 });
 
 test('Token list returns new object upon filter', async (t) => {
-  const list = await new TokenListProvider().resolve(Strategy.Static);
-  const filtered = list.filterByChainId(ENV.MainnetBeta);
+  const list = await new TokenListProvider().resolve(Strategy.GitHub);
+  const filtered = list.filterByChainId(ENV.PulseChain);
   t.true(list !== filtered);
   t.true(list.getList().length !== filtered.getList().length);
 });
 
 test('Token list throws error when calling filterByClusterSlug with slug that does not exist', async (t) => {
-  const list = await new TokenListProvider().resolve(Strategy.Static);
+  const list = await new TokenListProvider().resolve(Strategy.GitHub);
   const error = await t.throwsAsync(
     async () => list.filterByClusterSlug('whoop'),
     { instanceOf: Error }
@@ -65,9 +65,9 @@ test('Token list is a valid json', async (t) => {
 });
 
 test('Token list does not have duplicate entries', async (t) => {
-  const list = await new TokenListProvider().resolve(Strategy.Static);
+  const list = await new TokenListProvider().resolve(Strategy.GitHub);
   list
-    .filterByChainId(ENV.MainnetBeta)
+    .filterByChainId(ENV.PulseChain)
     .getList()
     .reduce((agg, item) => {
       if (agg.has(item.address)) {
