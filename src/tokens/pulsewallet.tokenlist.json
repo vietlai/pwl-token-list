@@ -41,7 +41,7 @@
     "bridge-token": {
       "name": "bridge-token",
       "description": "Assets bridged from other blockchains"
-    },
+    }
   },
   "timestamp": "2021-03-03T19:57:21+0000",
   "tokens": [
