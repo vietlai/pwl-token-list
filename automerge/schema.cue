@@ -143,7 +143,7 @@ import (
 
 	// The checksummed address of the token on the specified chain ID
 	// INCOMPATIBLE: base58
-	address: #Base58Address & != "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+	address: (#Base58Address | #EthAddress) & != "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
 
 	// The number of decimals for the token balance
 	decimals: int & >=0 & <=255
@@ -168,7 +168,7 @@ import (
 
 #Tokenlist: {
 	// The name of the token list
-	name: strings.MinRunes(2) & strings.MaxRunes(20)
+	name: strings.MinRunes(2) & strings.MaxRunes(30)
 
 	// The timestamp of this list version; i.e. when this immutable
 	// version of the list was created
