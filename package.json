@@ -1,7 +1,7 @@
 {
-  "name": "@solana/spl-token-registry",
-  "version": "0.2.4574",
-  "description": "Solana Token Registry",
+  "name": "pulsewallet-token-list",
+  "version": "0.1.1",
+  "description": "The PulseWallet Token List",
   "main": "dist/main/index.js",
   "typings": "dist/main/index.d.ts",
   "module": "dist/module/index.js",
