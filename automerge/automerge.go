@@ -58,7 +58,7 @@ type Automerger struct {
 
 const (
 	tokenlistPath = "src/tokens/pulsewallet.tokenlist.json"
-	appId         = int64(152533)
+	appId         = int64(1106939)
 )
 
 type ErrInvalidSchema error
