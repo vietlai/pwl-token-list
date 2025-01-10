@@ -1,6 +1,6 @@
 {
   "name": "pulsewallet-token-list",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "The PulseWallet Token List",
   "main": "dist/main/index.js",
   "typings": "dist/main/index.d.ts",
