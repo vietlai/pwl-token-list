@@ -139,7 +139,7 @@ import (
 #TokenInfo: {
 	// The chain ID of the Solana network where this token is
 	// deployed.
-	chainId: 101 | 102 | 103
+	chainId: 1 | 56 | 2000 | 4200 | 42161 | 43114 | 324 | 8453 | 101 | 137 | 369 | 80085 | 10 | 900
 
 	// The checksummed address of the token on the specified chain ID
 	// INCOMPATIBLE: base58
